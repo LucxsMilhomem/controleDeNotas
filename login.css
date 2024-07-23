@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body {
     font-family: Comic Sans MS, Comic Sans, cursive;
     background-image: url('https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_c3ee01bd-a082-44ff-b184-e338a13b2ffa.jpg');
     background-repeat: no-repeat;
-    background-size: 1366px 607px;
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
