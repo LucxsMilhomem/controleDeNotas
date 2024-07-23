@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="notas.css">
+    <title>Controle de Notas</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Controle de Notas Escolares</h1>
+            <div class="user-info">
+                <p id="userName">Nome: </p>
+                <p id="userClass">Turma: </p>
+            </div>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Disciplina</th>
+                        <th>1º Bimestre</th>
+                        <th>2º Bimestre</th>
+                        <th>3º Bimestre</th>
+                        <th>4º Bimestre</th>
+                        <th>Média</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Matemática</td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.75</td>
+                    </tr>
+                    <tr>
+                        <td>Português</td>
+                        <td><input type="number" value="5.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">5.75</td>
+                    </tr>
+                    <tr>
+                        <td>História</td>
+                        <td><input type="number" value="8.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.75</td>
+                    </tr>
+                    <tr>
+                        <td>Geografia</td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.00</td>
+                    </tr>
+                    <tr>
+                        <td>Física</td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.8" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.90</td>
+                    </tr>
+                    <tr>
+                        <td>Química</td>
+                        <td><input type="number" value="5.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">5.75</td>
+                    </tr>
+                    <tr>
+                        <td>Biologia</td>
+                        <td><input type="number" value="6.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.75</td>
+                    </tr>
+                    <tr>
+                        <td>Educação Física</td>
+                        <td><input type="number" value="8.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="8.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">8.25</td>
+                    </tr>
+                    <tr>
+                        <td>Filosofia</td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.25</td>
+                    </tr>
+                    <tr>
+                        <td>Sociologia</td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.25</td>
+                    </tr>
+                    <tr>
+                        <td>Inglês</td>
+                        <td><input type="number" value="8.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="8.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">8.25</td>
+                    </tr>
+                    <tr>
+                        <td>Artes</td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.25</td>
+                    </tr>
+                    <tr>
+                        <td>AW1</td>
+                        <td><input type="number" value="6.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.75</td>
+                    </tr>
+                    <tr>
+                        <td>LP2</td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.8" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.15</td>
+                    </tr>
+                    <tr>
+                        <td>LP3</td>
+                        <td><input type="number" value="8.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.75</td>
+                    </tr>
+                    <tr>
+                        <td>TPO</td>
+                        <td><input type="number" value="6.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="6.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">6.25</td>
+                    </tr>
+                    <tr>
+                        <td>TDS</td>
+                        <td><input type="number" value="7.0" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="7.5" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td><input type="number" value="" step="0.1" min="0" max="10" disabled></td>
+                        <td class="average">7.25</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <nav class="nav-buttons">
+                <button class="edit-button" onclick="toggleEdit(true)">Sou Professor</button>
+                <button class="edit-button" onclick="toggleEdit(false)">Sou Aluno</button>
+                <a href="login.html" class="nav-button">Voltar para Login</a>
+            </nav>
+
+            <div class="select-subject" id="selectSubject" style="display: none;">
+                <label for="subjects">Selecione a Disciplina:</label>
+                <select id="subjects">
+                    <option value="">Escolha</option>
+                    <option value="Matemática">Matemática</option>
+                    <option value="Português">Português</option>
+                    <option value="História">História</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="Física">Física</option>
+                    <option value="Química">Química</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Educação Física">Educação Física</option>
+                    <option value="Filosofia">Filosofia</option>
+                    <option value="Sociologia">Sociologia</option>
+                    <option value="Inglês">Inglês</option>
+                    <option value="Artes">Artes</option>
+                    <option value="AW1">AW1</option>
+                    <option value="LP2">LP2</option>
+                    <option value="LP3">LP3</option>
+                    <option value="TPO">TPO</option>
+                    <option value="TDS">TDS</option>
+                </select>
+                <button onclick="enableSubjectEdit()">Editar</button>
+                <button onclick="resetAllNotes()">Reiniciar Notas</button>
+            </div>
+            
+        </main>
+    </div>
+
+    <script>
+        function calculateAverage(input) {
+            const row = input.closest('tr');
+            const inputs = row.querySelectorAll('input[type="number"]');
+            let total = 0;
+            let count = 0;
+            inputs.forEach(input => {
+                if (input.value) {
+                    total += parseFloat(input.value);
+                    count++;
+                }
+            });
+            const average = total / count;
+            row.querySelector('.average').textContent = average ? average.toFixed(2) : "";
+        }
+
+        function toggleEdit(isProfessor) {
+            const inputs = document.querySelectorAll('input[type="number"]');
+            const selectSubject = document.getElementById('selectSubject');
+            if (isProfessor) {
+                selectSubject.style.display = 'block';
+                disableSubjectEdit();
+            } else {
+                selectSubject.style.display = 'none';
+                inputs.forEach(input => {
+                    input.classList.remove('editable');
+                    input.disabled = true;
+                });
+            }
+        }
+
+        function resetAllNotes() {
+            // Cria e exibe a faixa verde
+            const overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            document.body.appendChild(overlay);
+        
+            // Adiciona a classe para iniciar a animação
+            requestAnimationFrame(() => {
+                overlay.classList.add('show-overlay');
+            });
+        
+            // Define um temporizador para zerar as notas e médias após a animação
+            setTimeout(() => {
+                // Zera as notas
+                const inputs = document.querySelectorAll('input[type="number"]');
+                inputs.forEach(input => {
+                    input.value = '';
+                    input.classList.remove('editable');
+                    input.disabled = true;
+                });
+        
+                // Zera as médias
+                const averages = document.querySelectorAll('.average');
+                averages.forEach(avg => {
+                    avg.textContent = '';
+                });
+        
+                // Remove a faixa verde após o efeito
+                overlay.classList.remove('show-overlay');
+                setTimeout(() => {
+                    document.body.removeChild(overlay);
+                }, 500); // Tempo igual ao da animação
+            }, 500); // Tempo para a animação completa
+        }
+        
+        function enableSubjectEdit() {
+            const subject = document.getElementById('subjects').value;
+            disableSubjectEdit();
+            if (subject) {
+                const rows = document.querySelectorAll('tbody tr');
+                rows.forEach(row => {
+                    if (row.cells[0].textContent === subject) {
+                        const inputs = row.querySelectorAll('input[type="number"]');
+                        inputs.forEach(input => {
+                            // Adiciona a classe de transição
+                            input.classList.add('transition');
+                            setTimeout(() => {
+                                // Remove a classe de transição após um breve atraso
+                                input.classList.remove('transition');
+                                input.classList.add('editable');
+                                input.disabled = false;
+                                input.addEventListener('change', () => calculateAverage(input));
+                            }, 10); // Pequeno atraso para garantir que a transição seja visível
+                        });
+                    }
+                });
+            }
+        }
+        
+
+        function disableSubjectEdit() {
+            const rows = document.querySelectorAll('tbody tr');
+            rows.forEach(row => {
+                const inputs = row.querySelectorAll('input[type="number"]');
+                inputs.forEach(input => {
+                    input.classList.remove('editable');
+                    input.disabled = true;
+                });
+            });
+        }
+
+        function displayUserInfo() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            const userClass = urlParams.get('class');
+            document.getElementById('userName').textContent = `Nome: ${name}`;
+            document.getElementById('userClass').textContent = `Turma: ${userClass}`;
+        }
+
+        document.addEventListener('DOMContentLoaded', displayUserInfo);
+    </script>
+</body>
+</html>

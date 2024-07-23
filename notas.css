@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+body {
+    background-color: #4F4F4F;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+}
+
+header {
+    background-color: #363636;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.user-info {
+    margin-top: 10px;
+}
+
+.user-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table td {
+    transition: background-color 0.3s ease;
+}
+
+table td:hover {
+    background-color: #45a049;
+    transform: scale(1.20);
+}
+
+button, .nav-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .nav-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input[type="number"].editable {
+    border: 1px solid #007bff;
+    background-color: #e7f1ff;
+}
+
+.average {
+    font-weight: bold;
+}
+
+nav.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+button.edit-button, .nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #363636;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-button:hover, .nav-button:hover {
+    background-color: #45a049;
+}
+
+.nav-button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+}
+
+div.select-subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+label[for="subjects"] {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+select#subjects {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.select-subject {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.select-subject label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.select-subject select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.select-subject button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #363636;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-subject button:hover {
+    background-color: #45a049;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #28a745; /* Verde */
+    z-index: 1000; /* Garantir que esteja acima de outros elementos */
+    transition: left 0.5s ease-in-out; /* Ajuste a duração e o tipo de transição conforme necessário */
+}
+
+.overlay.show-overlay {
+    left: 0;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+input[type="number"] {
+    transition: background-color 1s ease, border 1s ease, color 1s ease;
+}
+
+input[type="number"].editable {
+    border: 1px solid #007bff;
+    background-color: #bbd4f8;
+    color: #333; /* Ajusta a cor do texto para melhor contraste */
+}
+
+input[type="number"].transition {
+    background-color: #e7f1ff; /* Cor final após a transição */
+    border: 1px solid #007bff; /* Borda final após a transição */
+}
